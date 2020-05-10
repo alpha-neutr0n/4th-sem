@@ -1,3 +1,5 @@
+//Demonstrating interfaces and packages
+
 interface Animal{
     void eat();
     void howManyLegs();
