@@ -1,5 +1,6 @@
-import java.lang.Math;
+// Demonstrating Inheritance and Polymorphism
 
+import java.lang.Math;
 class circle
 {
     public double radius;
