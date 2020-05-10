@@ -1,4 +1,6 @@
-public class Pgm10b {
+// Demostrating replace() function
+
+public class Main {
     public static void main(String[] args) {
         String str = "My name is Python";
         String rs = str.replace("Python", "Java");
