@@ -89,7 +89,7 @@ class Customer extends Thread
         m.consumer();
     }
 }
-public class Pgm7 {
+public class Main {
     public static void main(String[] args)
     {
         Market superMarket = new Market(10);
