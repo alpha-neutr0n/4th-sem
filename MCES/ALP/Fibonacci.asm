@@ -1,0 +1,19 @@
+;This code computes first 10 fibonnaci numbers
+;The result is stored in memory address 0x40000000
+
+    AREA RESET,CODE
+		ENTRY
+		MOV R5,#10
+		LDR R0,=0X40000000 ;MEMORY LOCATION WHERE SERIES IS STORED
+		MOV R1,#01   ;2ND NUMBER
+		MOV R2,#00   ;1ST NUMBER
+FIB     
+		ADD R3,R1,R2  ;COMPUTE NEXT NUMBER
+		STR R3,[R0],#04 ;STORE IN THE MEMORY
+		MOV R2,R1
+		MOV R1,R3
+		SUBS R5,#01
+		CMP R5,#00
+		BNE FIB
+STOP B  STOP
+		END
